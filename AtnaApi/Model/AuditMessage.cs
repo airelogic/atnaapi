@@ -77,7 +77,7 @@ namespace AtnaApi.Model
         {
             this.EventIdentification = new EventIdentificationType()
                 {
-                    EventDateTime = DateTime.Now,
+                    EventDateTime = timeStamp,
                     ActionCode = actionCode,
                     EventOutcome = outcome,
                     EventId = new CodeValue<EventIdentifierType>(eventIdentifier)
