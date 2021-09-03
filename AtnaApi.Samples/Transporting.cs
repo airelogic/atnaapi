@@ -87,9 +87,9 @@ namespace AtnaApi.Samples
 
                 // Select a certificate 
                 store.Open(OpenFlags.ReadOnly);
-                var selected = X509Certificate2UI.SelectFromCollection(store.Certificates, "Select Certificate", "Select a client certificate for this endpoint", X509SelectionFlag.SingleSelection);
+                // var selected = X509Certificate2UI.SelectFromCollection(store.Certificates, "Select Certificate", "Select a client certificate for this endpoint", X509SelectionFlag.SingleSelection);
 
-                transport.ClientCertificate = selected[0];
+                // transport.ClientCertificate = selected[0];
 
                 transport.MessageFormat = MessageFormatType.RFC3881;
                 transport.SendMessage(message);
