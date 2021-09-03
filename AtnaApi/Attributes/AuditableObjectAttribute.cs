@@ -138,7 +138,7 @@ namespace AtnaApi.Attributes
                         retVal.ObjectDetail.Add(new ObjectDetailType()
                         {
                             Type = "text/xml",
-                            Value = data
+                            Value = Convert.ToBase64String(data)
                         });
                     }
                     break;
