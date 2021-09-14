@@ -41,7 +41,7 @@ namespace AtnaApi.Model
         /// Gets or sets the value of the detail
         /// </summary>
         [XmlAttribute("value")]
-        public byte[] Value { get; set; }
+        public string Value { get; set; }
 
     }
 }
