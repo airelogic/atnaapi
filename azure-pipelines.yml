@@ -10,6 +10,9 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- bash: ./scripts/set-version.sh
+  displayName: "Set version"
+  
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
